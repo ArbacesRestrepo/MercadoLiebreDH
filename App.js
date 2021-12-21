@@ -8,7 +8,7 @@ app.get('', (req,res) =>{
     res.sendFile( ( __dirname + '/Views/Home.html' ) );  // Permite enviar archivo HTML
 });
 
-app.use(express.static( path.resolve( __dirname, '/public') ) );  
+app.use(express.static( path.resolve( __dirname, './public') ) );  
 app.use(express.static( path.resolve( __dirname, './views') ) );  
 
 app.listen( process.env.PORT || 3000, () => {

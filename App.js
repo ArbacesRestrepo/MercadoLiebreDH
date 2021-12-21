@@ -11,7 +11,7 @@ app.get('', (req,res) =>{
 app.use(express.static( path.join( __dirname, './public') ) );  
 app.use(express.static( path.join( __dirname, './views') ) );  
 
-app.listen(3000, () => {
+app.listen( process.env.PORT || 3000, () => {
     console.log("Servidor corriendo");
 });
 

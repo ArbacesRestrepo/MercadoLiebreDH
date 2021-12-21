@@ -50,7 +50,6 @@ header{
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
-    padding-right: 5%;
     margin-top: 10px;
 }
 
@@ -133,13 +132,7 @@ main section article i{
     grid-template-rows: repeat( auto-fill, 1fr );
 }
 
-@media (max-width: 767px){
-    .PortalProductos .ContenidoProductos{
-        width: 90%;
-    }
-}
-
-@media (min-width: 768px){
+@media (min-width: 481px) {
     .EncabezadoPrincipal{
         display: flex;
         justify-content: space-between;
@@ -151,7 +144,7 @@ main section article i{
     }
 }
 
-@media (min-width: 1200px){
+@media (min-width: 769px) {
     .EncabezadoPrincipal .ListaNavegacion{
         align-items: center;
         max-width: 1200px;

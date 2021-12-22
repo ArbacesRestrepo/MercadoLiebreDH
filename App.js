@@ -9,6 +9,7 @@ app.get('', (req,res) =>{
 });
 
 app.use(express.static( path.resolve( __dirname, './public') ) );  
+app.use(express.static( path.resolve( __dirname, './public/css') ) );  
 app.use(express.static( path.resolve( __dirname, './views') ) );  
 
 app.listen( process.env.PORT || 3000, () => {

@@ -12,7 +12,7 @@ app.use(express.static( path.resolve( __dirname, './public') ) );
 app.use(express.static( path.resolve( __dirname, './views') ) );  
 
 app.listen( process.env.PORT || 3000, () => {
-    console.log("Servidor corriendo");
+    console.log( "Servidor corriendo" );
 });
 
 app.use('/public/', express.static(__dirname + '/public/'))

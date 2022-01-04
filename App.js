@@ -15,6 +15,6 @@ app.listen( process.env.PORT || 3000, () => {
     console.log( "Servidor corriendo" );
 });
 
-app.use('/public/', express.static(__dirname + '/public/'))
+app.use('/Public/', express.static(__dirname + '/Public/'))
 
 

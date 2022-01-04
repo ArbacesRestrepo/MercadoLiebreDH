@@ -8,8 +8,8 @@ app.get('', (req,res) =>{
     res.sendFile( ( __dirname + '/Views/Home.html' ) );  // Permite enviar archivo HTML
 });
 
-app.use(express.static( path.resolve( __dirname, './public') ) );
-app.use(express.static( path.resolve( __dirname, './views') ) );  
+app.use(express.static( path.resolve( __dirname, './Public') ) );
+app.use(express.static( path.resolve( __dirname, './Views') ) );  
 
 app.listen( process.env.PORT || 3000, () => {
     console.log( "Servidor corriendo" );
